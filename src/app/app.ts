@@ -1,5 +1,8 @@
+import * as dotenv from 'dotenv';
+dotenv.config();
 import * as express from 'express';
 import { Routes } from './routes';
+import '../config/database';
 
 class App {
   public readonly app: express.Application;

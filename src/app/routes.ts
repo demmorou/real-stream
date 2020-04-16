@@ -1,10 +1,10 @@
 import { Application } from 'express';
-import { SessionController } from './controllers/SessionController';
+import { UserController } from './controllers/UserController';
 
 export class Routes {
-  private readonly sessionControoler: SessionController = new SessionController();
+  private readonly userController: UserController = new UserController();
 
   routes(app: Application): void {
-    app.get('/sessions', this.sessionControoler.store);
+    app.post('/users', this.userController.store);
   }
 }
