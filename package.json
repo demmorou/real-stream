@@ -7,7 +7,7 @@
     "build": "tsc",
     "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/app/",
     "prod": "npm run build && npm run start",
-    "test": "mocha"
+    "test": "jest --config jestconfig.json"
   },
   "keywords": [],
   "author": "",
@@ -32,9 +32,12 @@
     "@types/node": "^13.11.1",
     "cz-conventional-changelog": "^3.1.0",
     "husky": "^4.2.3",
+    "jest": "^25.3.0",
     "nodemon": "^2.0.3",
     "prettier": "^2.0.4",
     "sequelize-cli-typescript": "^3.2.0-c",
+    "supertest": "^4.0.2",
+    "ts-jest": "^25.3.1",
     "ts-node": "^8.8.2",
     "tslint": "^6.1.1",
     "tslint-config-prettier": "^1.18.0",
